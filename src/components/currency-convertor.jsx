@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import CurrencyDropdown from "./dropdown";
+import React, { useEffect, useState } from "react";
 import { HiArrowsRightLeft } from "react-icons/hi2";
+import CurrencyDropdown from "./dropdown";
 
 const CurrencyConverter = () => {
   const [currencies, setCurrencies] = useState([]);
-  const [amount, setAmount] = useState(1);
+  const [amount, setAmount] = useState();
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("INR");
   const [convertedAmount, setConvertedAmount] = useState(null);
